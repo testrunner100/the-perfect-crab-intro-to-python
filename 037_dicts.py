@@ -34,7 +34,7 @@ print("A List is:")
 print("  " + my_dictionary["List"])
 
 # @TASK: Add a definition for a "Dictionary" to our dictionary above by editing
-# the code around line 21. Then print out the value below.
+# the code around line 20. Then print out the value below.
 
 print("A Dictionary is:")
 # ...
