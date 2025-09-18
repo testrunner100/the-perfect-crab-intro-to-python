@@ -28,6 +28,25 @@ print("")
 print("Function: report_long_words")
 
 def report_long_words(words):
+  reported_words = "These words are quite long: "
+  more_than_one = False
+
+  for word in words:
+    if (len(word) > 10 and len(word) <= 15) and (word.find("-") == -1):
+      if (more_than_one):
+        reported_words = reported_words + ", " + word
+      else:
+        reported_words = reported_words + word
+      more_than_one = True
+    
+    if (len(word) > 15) and (word.find("-") == -1):
+      if (more_than_one):
+        reported_words = reported_words + ", " + word[0:15] + "..."
+      else:
+        reported_words = reported_words + word[0:15] + "..."
+      more_than_one = True
+    
+  return reported_words
   pass
 
 check_that_these_are_equal(
